@@ -1,6 +1,6 @@
 'use strict';
 
-function calcAge(birthYear){
+/*function calcAge(birthYear){
     const age = 2037 - birthYear;
 
     function printAge(){
@@ -33,6 +33,44 @@ function calcAge(birthYear){
 const firstName = 'Juwon'; // 다른영역에서 정의해서 상관 x
 calcAge(1991);
 //console.log(age); Error 
-//printAge(); Error
+//printAge(); Error */
+
+//Variables
+console.log(me);
+// console.log(job); Error
+ //console.log(year);Error
+
+var me = 'Jonas';
+let job = 'teacher';
+const year =- 1991;
+
+//Functions
+console.log(addDec1(2,3));
+// console.log(addExpr(2,3));
+// console.log(addArrow(2,3)); 
+
+
+function addDec1(a,b){
+    return a + b;
+}
+
+const addExpr = function(a,b){ //var로 해도 같은 결과가 나온다 그이유는 
+    //var자체가 undefined라서
+    return a+b;
+}
+
+const addArrow = (a,b) => a+b;
+
+//Example
+if (!numProducts) deleteShopping();
+
+var numProducts =10 ; // not number but undefined 
+
+function deleteShopping(){
+    console.log('All products deleted!')
+}
+
+
+
 
 
